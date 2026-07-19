@@ -36,7 +36,22 @@
   --section-b: #ffffff;
 }
 
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+}
+a, button, input, select, textarea, [role="button"], .contact-btn, .footer-contact-btn, .notice-card, .scheme-card {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+  box-shadow: none !important;
+}
+a:focus, button:focus, input:focus, select:focus, textarea:focus, [role="button"]:focus, .contact-btn:focus, .footer-contact-btn:focus, .notice-card:focus, .scheme-card:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
 html { scroll-behavior: smooth; -ms-overflow-style: none; scrollbar-width: none; }
 ::-webkit-scrollbar { display: none; }
 
